@@ -1,19 +1,22 @@
 {
   "name": "slack-logs-automation",
-  "version": "2.0.0",
-  "description": "Automated multi-channel Slack logs fetcher with Excel export",
-  "main": "scheduler.js",
+  "version": "3.0.0",
+  "description": "Automated multi-channel Slack logs fetcher with Google Sheets integration",
+  "main": "scheduler-google-sheets.js",
   "scripts": {
     "start": "node scheduler.js",
     "fetch": "node multi-channel-log-fetcher.js",
     "convert": "node convert-to-excel.js",
-    "manual": "node multi-channel-log-fetcher.js && node convert-to-excel.js"
+    "manual": "node multi-channel-log-fetcher.js && node convert-to-excel.js",
+    "google-sheets": "node scheduler-google-sheets.js",
+    "google-sheets-once": "node google-sheets-log-pusher.js"
   },
   "keywords": [
     "slack",
     "logs",
     "automation",
     "excel",
+    "google-sheets",
     "multi-channel"
   ],
   "author": "",
@@ -22,6 +25,7 @@
     "@slack/web-api": "^7.0.0",
     "dayjs": "^1.11.10",
     "dotenv": "^16.4.5",
+    "googleapis": "^128.0.0",
     "node-cron": "^3.0.3",
     "xlsx": "^0.18.5"
   }
