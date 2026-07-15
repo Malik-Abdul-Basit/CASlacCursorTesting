@@ -15,6 +15,7 @@ yarn-error.log*
 
 # Last fetch times tracking
 last-fetch-times.json
+last_fetch_time.json
 
 # Backup files
 backup-logs-*.json
@@ -22,6 +23,7 @@ backup-logs-*.json
 # Slack logs output
 unique_slack_logs.txt
 slack_logs.txt
+slack_logs_*.xlsx
 
 # OS files
 .DS_Store
