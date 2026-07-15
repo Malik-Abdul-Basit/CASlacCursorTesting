@@ -1,0 +1,25 @@
+{
+  "name": "slack-logs-automation",
+  "version": "1.0.0",
+  "description": "Automated Slack logs fetcher that stores logs in Google Sheets",
+  "main": "automated-logs-fetcher.js",
+  "scripts": {
+    "start": "node automated-logs-fetcher.js",
+    "test": "node get_logs_52c4.js"
+  },
+  "keywords": [
+    "slack",
+    "logs",
+    "automation",
+    "google-sheets"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/web-api": "^7.0.0",
+    "dayjs": "^1.11.10",
+    "googleapis": "^134.0.0",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.5"
+  }
+}
